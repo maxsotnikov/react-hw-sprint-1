@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {ChangeEvent, useState} from 'react';
 
 export const HW3 = () => {
   // 1️⃣ Раскомментируйте JSX(HW3.tsx) и вы увидите,
@@ -16,7 +16,7 @@ export const HW3 = () => {
     'То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)',
   ]);
 
-  const handleChange = (event: any) => {
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     // setCurrentText(ЧЕГО-ТО НЕ ХВАТАЕТ);
     setCurrentText(event.currentTarget.value)
   };
